@@ -29,7 +29,7 @@ export default function PublicLayout({
       {/* Announcement bar */}
       <div className="bg-primary py-2 text-center text-sm font-medium text-primary-foreground">
         New Year Special: First month FREE when you sign up today!{" "}
-        <Link href="/" className="underline underline-offset-2 hover:no-underline">
+        <Link href="/signup" className="underline underline-offset-2 hover:no-underline">
           Claim offer
         </Link>
       </div>
@@ -68,14 +68,14 @@ export default function PublicLayout({
 
           {/* CTA Buttons */}
           <div className="hidden items-center gap-3 md:flex">
-            <Link href="/dashboard">
+            <Link href="/signup">
               <Button variant="ghost" size="sm" className="font-semibold">
-                Member Login
+                Sing Up
               </Button>
             </Link>
-            <Button size="sm" className="font-semibold">
-              Join Now
-            </Button>
+          <Link href="/login">
+                <Button className="w-full cursor-pointer">Log in</Button>
+                </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -108,12 +108,14 @@ export default function PublicLayout({
                 </Link>
               ))}
               <div className="mt-4 flex flex-col gap-2 border-t border-border pt-4">
-                <Link href="/dashboard" onClick={() => setMobileMenuOpen(false)}>
+                <Link href="/signup" onClick={() => setMobileMenuOpen(false)}>
                   <Button variant="outline" className="w-full bg-transparent">
-                    Member Login
+                    Sing up
                   </Button>
                 </Link>
-                <Button className="w-full">Join Now</Button>
+                <Link href="/login">
+                <Button className="w-full hover:bg-sky-700 cursor-pointer">Log in</Button>
+                </Link>
               </div>
             </nav>
           </div>

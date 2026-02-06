@@ -55,14 +55,16 @@ export default function HomePage() {
               Start Free Trial
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+            <Link href={"/classes"}>
             <Button
               variant="outline"
               size="lg"
               className="text-lg px-8 py-6 font-semibold bg-transparent border-foreground/20 hover:bg-foreground/10"
             >
-              <Play className="mr-2 h-5 w-5 fill-current" />
-              Watch Tour
+            
+              Book a class
             </Button>
+            </Link>
           </div>
 
           {/* Social proof */}
